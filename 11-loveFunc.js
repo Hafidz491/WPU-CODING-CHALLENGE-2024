@@ -1,3 +1,7 @@
+// WPU CHALLENGE 2024
+// 11/366
+// ...
+
 function lovefunc(flower1, flower2) {
   // moment of truth
   if (
