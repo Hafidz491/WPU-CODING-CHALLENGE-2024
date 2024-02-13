@@ -15,7 +15,9 @@
 //   return result;
 // }
 
-// function arrayPlusArray(arr1, arr2) {
+// FUNGSI ARGUMENTS ADALAH FUNGSI UNTUK MENGAMBIL ARGUMEN
+
+// function arrayPlusArray(arr1, arr2, arr3) {
 //   let result = 0;
 //   for (let i = 0; i < arguments.length; i++) {
 //     for (let j = 0; j < arguments[i].length; j++) {
@@ -26,9 +28,14 @@
 //   return result;
 // }
 
+// FUNGSI FLAT UNTUK MENGELUARKAN NILAI ARRAY BERSARANG MENJADI 1 ARRAY BARU
+function arrayPlusArray(...arguments) {
+  return arguments.flat().reduce((a, b) => a + b);
+}
+
 // FUNGSI CONCAT UNTUK MENGGABUNGKAN DUA ARRAY MENJADI 1 ARRAY BARU
 // FUNGSI REDUCE UNTUK MEMPROSES (+, -, X, /) ARRAY MENJADI 1 NILAI
-const arrayPlusArray = (arr1, arr2) =>
-  arr1.concat(arr2).reduce((a, b) => a + b);
+// const arrayPlusArray = (arr1, arr2) =>
+//   arr1.concat(arr2).reduce((a, b) => a + b);
 
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6], [9, 8, 7], [8, 2, 3]));
