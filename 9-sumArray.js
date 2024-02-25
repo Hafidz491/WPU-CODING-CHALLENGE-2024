@@ -7,9 +7,7 @@ function sumArray(array) {
     return 0;
   }
 
-  array.sort(function (a, b) {
-    return a - b;
-  });
+  array.sort((a, b) => a - b);
 
   let total = 0;
   for (let i = 1; i < array.length - 1; i++) {
